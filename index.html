@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="az">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>266kimdi</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Poppins Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+        }
+    </style>
+</head>
+
+<body class="bg-slate-100 text-slate-800">
+
+    <!-- Header Section -->
+    <header class="bg-white shadow-lg py-4 px-6 flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
+        <a href="#" class="text-3xl font-bold text-indigo-600 tracking-tight transition-transform duration-300 hover:scale-105">
+            266kimdi
+        </a>
+        <nav class="space-x-4">
+            <a href="https://instagram.com/266kimdi" target="_blank"
+                class="inline-block px-5 py-2 text-md font-semibold text-white bg-indigo-500 rounded-full shadow-lg transition-all duration-300 hover:bg-indigo-600 hover:shadow-xl hover:scale-105">
+                Instagram
+            </a>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main class="container mx-auto px-4 py-8">
+        <!-- Search Bar -->
+        <div class="relative max-w-lg mx-auto mb-8">
+            <input id="q" type="text" placeholder="Ad və ya sinif yaz..."
+                class="w-full py-3 px-6 text-lg placeholder-slate-400 bg-white rounded-full shadow-xl focus:outline-none focus:ring-4 focus:ring-indigo-300 transition-all duration-300" />
+            <div id="loading" class="absolute right-6 top-1/2 -translate-y-1/2 hidden text-indigo-500 animate-spin">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24"
+                    stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                        d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m15.356-2A8.001 8.001 0 004.582 9m-4.595 1.543a.5.5 0 01.121-.295l.808-.808a.5.5 0 01.69.001l.808.808a.5.5 0 01.001.69l-.808.808a.5.5 0 01-.69-.001l-.808-.808a.5.5 0 01-.121-.295zM4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9" />
+                </svg>
+            </div>
+        </div>
+
+        <!-- Card Grid -->
+        <div id="results" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+            <!-- Cards will be dynamically inserted here -->
+        </div>
+
+        <!-- No Results Message -->
+        <div id="no-results-message" class="text-center text-xl text-slate-500 mt-8 hidden">
+            Heç bir nəticə tapılmadı.
+        </div>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
